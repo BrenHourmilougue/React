@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+}
+
+html, body{
+    background-color: black;
+    color: whitesmoke;
+    padding: 100px;
+}
