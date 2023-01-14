@@ -1,14 +1,21 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
+export const App = ({title, subtitle}) => {
 
-function App() {
-
-  return ( //<></> = Fragmento
+  return (
     <>
-    <h1>Hola Mundo!</h1>
+    <h1>{title}</h1>
+    <p>{subtitle}</p>
     </>
   
   )
 }
-export const HelloWorldApp=()=><h1>Hello World</h1>;
-export default App
+App.propTypes = {
+  title : PropTypes.string.isRequired,
+  subtitle : PropTypes.string.isRequired,
+}
+App.defaultProps = {
+  title : 'Hello World',
+  subtitle : 'Hola mun2',
+}
